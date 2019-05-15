@@ -1,0 +1,101 @@
+//
+//  PrefixHeader.pch
+//  VeaseAdmin
+//
+//  Created by aliapple on 23/11/2018.
+//  Copyright © 2018 aliapple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+#pragma mark -- To Get IPAddress
+#include <ifaddrs.h>
+#include <arpa/inet.h>
+#include <net/if.h>
+
+#define IOS_CELLULAR    @"pdp_ip0"
+#define IOS_WIFI        @"en0"
+//#define IOS_VPN       @"utun0"
+#define IP_ADDR_IPv4    @"ipv4"
+#define IP_ADDR_IPv6    @"ipv6"
+
+#import <QuartzCore/QuartzCore.h>
+
+#pragma mark -- External Classess
+#import "SWRevealViewController.h"
+#import "MKDropdownMenu.h"
+#import "TYPagerView.h"
+#import "TYTabPagerBar.h"
+#import "LGPlusButtonsView.h"
+#import "ACFloatingTextField.h"
+#import "TPSDropDown.h"
+#import "TPKeyboardAvoidingScrollView.h"
+#import "LSLDatePickerDialog.h"
+
+#pragma mark -- ServerDataHandler & Progress HUD
+#import "ServerDataHandler.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "UserDC.h"
+#import "VAGlobalInstance.h"
+#import "CompanyDetailDC.h"
+
+/*---- App Image WebCache ----*/
+#import "UIImageView+WebCache.h"
+#import "objc/runtime.h"
+#import "UIView+WebCacheOperation.h"
+#import <QuartzCore/QuartzCore.h>
+
+#pragma mark -- ViewControllers
+#import "VARegisterViewController.h"
+#import "VASignInViewController.h"
+#import "VAParentViewController.h"
+#import "VAMenuViewController.h"
+#import "VAHomeViewController.h"
+#import "VALeadViewController.h"
+#import "VAServicesViewController.h"
+#import "VAStaffViewController.h"
+#import "VASettingsViewController.h"
+#import "VANotificationCenterViewController.h"
+#import "VAResolutionCenterViewController.h"
+#import "VAEstimatedResponseViewController.h"
+#import "VAAddLeadViewController.h"
+#import "VAAddCategoriesViewController.h"
+#import "VAAddServicesViewController.h"
+#import "VAGeneralSettingViewController.h"
+#import "VANewScheduleViewController.h"
+#import "VAAddShiftViewController.h"
+#import "VAFinanceSettingViewController.h"
+#import "VATaxesViewController.h"
+#import "VAAddTaxViewController.h"
+#import "VAPaymentSettingViewController.h"
+#import "VARoleViewController.h"
+#import "VAStaffSettingViewController.h"
+#import "VAAddStaffSettingViewController.h"
+#import "VAServicesSettingsViewController.h"
+#import "VAAddServicesSettingViewController.h"
+#import "VABundlesSettingViewController.h"
+#import "VANotificationTableViewCell.h"
+#import "VAEmployeePortalViewController.h"
+
+#pragma mark -- UITableview Cell
+#import "VAMenuTableViewCell.h"
+#import "VASettingMenuTableViewCell.h"
+#import "VAGeneralSettingTableViewCell.h"
+#import "VAPaymentPaypalTableViewCell.h"
+#import "VALeadPendingTableViewCell.h"
+#import "resolutionTableViewCell.h"
+#import "VAGeneralLocationTableViewCell.h"
+#import "VATaxGeneralTableViewCell.h"
+#import "VARoleTableViewCell.h"
+#import "VASTAFFTableViewCell.h"
+#import "VAServicesTableViewCell.h"
+#import "VABundleTableViewCell.h"
+
+#endif /* PrefixHeader_pch */
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="KGk-i7-Jjw" customClass="VAMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGI-go-D8L">
+                        <rect key="frame" x="5" y="5" width="310" height="39.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_settings" translatesAutoresizingMaskIntoConstraints="NO" id="6zk-5O-pfy">
+                                <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="73d-NB-7Tj"/>
+                                    <constraint firstAttribute="height" constant="24" id="EQF-XT-XAt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oE1-Um-DmS">
+                                <rect key="frame" x="52" y="11" width="238" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.77254901960784317" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oE1-Um-DmS" secondAttribute="trailing" constant="20" id="53y-Nf-aYe"/>
+                            <constraint firstItem="6zk-5O-pfy" firstAttribute="leading" secondItem="WGI-go-D8L" secondAttribute="leading" constant="8" id="ELr-kP-7ya"/>
+                            <constraint firstItem="oE1-Um-DmS" firstAttribute="centerY" secondItem="WGI-go-D8L" secondAttribute="centerY" id="Uig-TH-7TB"/>
+                            <constraint firstItem="oE1-Um-DmS" firstAttribute="leading" secondItem="6zk-5O-pfy" secondAttribute="trailing" constant="20" id="Yy2-GR-S6h"/>
+                            <constraint firstItem="6zk-5O-pfy" firstAttribute="centerY" secondItem="WGI-go-D8L" secondAttribute="centerY" id="eiy-Rl-EwV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WGI-go-D8L" secondAttribute="bottom" constant="5" id="1J7-8k-bxJ"/>
+                    <constraint firstAttribute="trailing" secondItem="WGI-go-D8L" secondAttribute="trailing" constant="5" id="Ugz-jr-JBe"/>
+                    <constraint firstItem="WGI-go-D8L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cVe-6h-ALb"/>
+                    <constraint firstItem="WGI-go-D8L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zaa-vf-UPD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgViewIcon" destination="6zk-5O-pfy" id="sdg-7x-PEt"/>
+                <outlet property="lblMenuItemName" destination="oE1-Um-DmS" id="ykQ-5e-coY"/>
+                <outlet property="viewCellBg" destination="WGI-go-D8L" id="NnA-5x-dVA"/>
+            </connections>
+            <point key="canvasLocation" x="41.600000000000001" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_settings" width="25.600000381469727" height="25.600000381469727"/>
+    </resources>
+</document>

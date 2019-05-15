@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" tag="101" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-Dq-Udd">
+                    <rect key="frame" x="8" y="10" width="304" height="448"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Se2-pN-clJ"/>
+                        <outlet property="delegate" destination="-1" id="sVn-uc-a1V"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" tag="102" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-kH-nw0">
+                    <rect key="frame" x="135" y="259" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rj2-3p-dil"/>
+                        <constraint firstAttribute="height" constant="50" id="u2P-RA-R7R"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QrZ-Dq-Udd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="JRh-TX-KcM"/>
+                <constraint firstItem="UNm-kH-nw0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R8s-s2-7yr"/>
+                <constraint firstAttribute="bottom" secondItem="QrZ-Dq-Udd" secondAttribute="bottom" constant="110" id="XTA-hg-0i1"/>
+                <constraint firstAttribute="trailing" secondItem="QrZ-Dq-Udd" secondAttribute="trailing" constant="8" id="b9z-eb-UrI"/>
+                <constraint firstItem="QrZ-Dq-Udd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="pg5-wU-KZT"/>
+                <constraint firstItem="UNm-kH-nw0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xcN-ib-biq"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
